@@ -1,0 +1,36 @@
+{
+  "operational_excellence": {
+    "OPS1": {"resource_types": [], "description": "Pregunta organizacional"},
+    "OPS2": {"resource_types": [], "description": "Pregunta organizacional"},
+    "OPS3": {"resource_types": [], "description": "Pregunta organizacional"},
+    "OPS4": {"resource_types": ["MetricNamespace", "Alarm", "NotificationTopic"], "description": "Monitoreo OCI"},
+    "OPS5": {"resource_types": ["EventsRule", "FunctionsFunction", "NotificationTopic"], "description": "Automatización y eventos"}
+  },
+  "security": {
+    "SEC1": {"resource_types": ["Vault", "VaultSecret"], "description": "Secretos y Vault"},
+    "SEC2": {"resource_types": ["DynamicGroup", "Policy"], "description": "IAM y Dynamic Groups"},
+    "SEC3": {"resource_types": ["Policy", "UserGroupMembership"], "description": "Políticas y menor privilegio"},
+    "SEC4": {"resource_types": ["LogGroup", "Log"], "description": "Logs y auditoría"},
+    "SEC5": {"resource_types": ["Vcn", "NetworkSecurityGroup", "Subnet"], "description": "Red y NSG"},
+    "SEC6": {"resource_types": ["Vault", "Bucket"], "description": "Cifrado y almacenamiento"}
+  },
+  "reliability": {
+    "REL1": {"resource_types": ["Instance", "InstancePool"], "description": "Compute y disponibilidad"},
+    "REL2": {"resource_types": ["Stack", "Job"], "description": "Resource Manager"},
+    "REL3": {"resource_types": ["VolumeBackup", "Bucket"], "description": "Backup y recuperación"}
+  },
+  "cost_optimization": {
+    "COST1": {"resource_types": [], "description": "Cost Analysis"},
+    "COST2": {"resource_types": ["Instance", "InstancePool", "AutoscaleConfiguration"], "description": "Compute"},
+    "COST3": {"resource_types": [], "description": "Cloud Advisor"}
+  },
+  "performance_efficiency": {
+    "PERF1": {"resource_types": ["InstancePool", "LoadBalancer", "AutoscaleConfiguration"], "description": "Escalado"},
+    "PERF2": {"resource_types": [], "description": "Pruebas"},
+    "PERF3": {"resource_types": ["MetricNamespace", "Alarm"], "description": "Monitoreo"}
+  },
+  "sustainability": {
+    "SUS1": {"resource_types": ["Instance", "Bucket", "Volume"], "description": "Uso eficiente"},
+    "SUS2": {"resource_types": [], "description": "Diseño y ciclo de vida"}
+  }
+}

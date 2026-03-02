@@ -1,0 +1,102 @@
+{
+  "operational_excellence": {
+    "OPS1": {
+      "question": "¿Cómo determinas tus prioridades de negocio y métricas de éxito?",
+      "best_practices": ["Definir resultados de negocio", "Priorizar por valor y riesgo", "Revisar prioridades con regularidad"]
+    },
+    "OPS2": {
+      "question": "¿Cómo estructuras la organización para apoyar las cargas de trabajo?",
+      "best_practices": ["Alinear equipos con compartments/cargas", "Equipos pequeños y autónomos", "Responsabilidades claras"]
+    },
+    "OPS3": {
+      "question": "¿Cómo la cultura organizacional apoya la excelencia operativa?",
+      "best_practices": ["Mejora continua", "Postmortems sin culpa", "Automatizar operaciones"]
+    },
+    "OPS4": {
+      "question": "¿Cómo monitoreas la carga de trabajo para asegurar que opera como se espera?",
+      "best_practices": ["OCI Monitoring: métricas, alarmas y notificaciones", "Definir SLIs y SLOs", "Dashboards y alertas"]
+    },
+    "OPS5": {
+      "question": "¿Cómo respondes a eventos operacionales no planificados?",
+      "best_practices": ["Runbooks y OCI Events", "Automatizar respuesta con Functions/Notifications", "Simulaciones de incidentes"]
+    }
+  },
+  "security": {
+    "SEC1": {
+      "question": "¿Cómo gestionas credenciales y autenticación?",
+      "best_practices": ["OCI Vault para secretos", "MFA en IAM", "Evitar secretos de largo plazo"]
+    },
+    "SEC2": {
+      "question": "¿Cómo gestionas identidades para personas y cargas de trabajo?",
+      "best_practices": ["IAM como identidad central", "Dynamic Groups para recursos", "Políticas mínimas"]
+    },
+    "SEC3": {
+      "question": "¿Cómo aplicas el principio de menor privilegio?",
+      "best_practices": ["Políticas IAM con permisos mínimos", "Revisión de acceso periódica", "Compartments por entorno"]
+    },
+    "SEC4": {
+      "question": "¿Cómo detectas e investigas eventos de seguridad?",
+      "best_practices": ["OCI Logging y Log Analytics", "Cloud Guard", "Audit logs"]
+    },
+    "SEC5": {
+      "question": "¿Cómo proteges los recursos de red?",
+      "best_practices": ["Security Lists, NSGs, WAF", "Segmentación con VCNs", "Private subnets"]
+    },
+    "SEC6": {
+      "question": "¿Cómo proteges datos en reposo y en tránsito?",
+      "best_practices": ["Cifrado con Vault (KMS)", "TLS para tránsito", "Object Storage encryption"]
+    }
+  },
+  "reliability": {
+    "REL1": {
+      "question": "¿Cómo diseñas para requisitos de disponibilidad y recuperación?",
+      "best_practices": ["Fault Domains y Availability Domains", "Objetivos RTO/RPO definidos", "Arquitectura simplificada"]
+    },
+    "REL2": {
+      "question": "¿Cómo gestionas cambios en la infraestructura?",
+      "best_practices": ["Resource Manager (Terraform)", "CI/CD con DevOps", "Despliegues seguros"]
+    },
+    "REL3": {
+      "question": "¿Cómo te preparas para recuperación ante desastres?",
+      "best_practices": ["Backup (Block Volume, Object Storage)", "Réplicas multi-región donde aplique", "Plan de DR documentado"]
+    }
+  },
+  "cost_optimization": {
+    "COST1": {
+      "question": "¿Cómo modelas y comprendes los costos?",
+      "best_practices": ["Cost Analysis y budgets en OCI", "Etiquetado consistente", "Costos por compartment/recurso"]
+    },
+    "COST2": {
+      "question": "¿Cómo optimizas el gasto en recursos de cómputo?",
+      "best_practices": ["Right-sizing con Cloud Advisor", "Reserved capacity donde aplique", "Escalar y apagar cuando no se use"]
+    },
+    "COST3": {
+      "question": "¿Cómo evitas y reduces desperdicio?",
+      "best_practices": ["Revisar recomendaciones Cloud Advisor Cost", "Eliminar recursos no usados", "Optimizar almacenamiento"]
+    }
+  },
+  "performance_efficiency": {
+    "PERF1": {
+      "question": "¿Cómo escalas la carga de trabajo ante demanda?",
+      "best_practices": ["Instance Pools, Autoscaling", "Load Balancer", "Diseño sin cuellos de botella"]
+    },
+    "PERF2": {
+      "question": "¿Cómo pruebas cambios antes de producción?",
+      "best_practices": ["Pruebas de carga", "Entornos de staging por compartment", "Despliegues progresivos"]
+    },
+    "PERF3": {
+      "question": "¿Cómo monitoreas el rendimiento de la solución?",
+      "best_practices": ["OCI Monitoring y métricas", "Alarmas de rendimiento", "Revisar salud de la solución"]
+    }
+  },
+  "sustainability": {
+    "SUS1": {
+      "question": "¿Cómo optimizas el uso de recursos para reducir huella?",
+      "best_practices": ["Eficiencia de recursos (right-sizing)", "Consolidar y apagar recursos no usados", "Regiones eficientes"]
+    },
+    "SUS2": {
+      "question": "¿Cómo consideras la sostenibilidad en el diseño?",
+      "best_practices": ["Arquitectura eficiente", "Reducir transferencia de datos innecesaria", "Ciclo de vida de recursos"]
+    }
+  }
+}
